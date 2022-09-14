@@ -1,7 +1,7 @@
 class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
-        this.precio = precio;
+        this.precio = precio * 1.21;
     }
 }
 
@@ -16,7 +16,7 @@ const buscador = prompt("¿Cual es el nombre del producto que queres buscar? (re
 
 const encontrado = arrayProductos.find(producto => producto.nombre === buscador);
 
-if(encontrado === null){
+if(encontrado === undefined){
     alert('El producto no existe')
 }else{
     console.log(encontrado)
