@@ -17,7 +17,13 @@ const contenedorProductos = document.getElementById("contenedorProductos");
 arrayProductos.forEach( Producto => {
     let div = document.createElement ("div");
     div.innerHTML = `<p> ${Producto.nombre} </p>
-                    <p> Precio: $${Producto.precio} </p>
-                    <button> Agregar al carrito </button>`;
+                    <p> Precio: $${Producto.precio} </p> 
+                    <button id="boton"> Agregar al carrito </button>`;
     contenedorProductos.appendChild(div);
 })
+
+let boton = document.getElementById("boton");
+
+boton.addEventListener("click", () => {
+    console.log("En breve resivira su prenda. Muchas gracias!")
+});
