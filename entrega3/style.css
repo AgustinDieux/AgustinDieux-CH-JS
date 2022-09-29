@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(24, 23, 23) !important;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+h2 {
+    color:white;
+    margin-top: 16px;
+}
+
+p{
+    color: white;
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 75vh;
+}
+
+.cartas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.remera-nike{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid;
+    border-color: white;
+    margin-right: 16px;
+}
+
+.pantalon-puma{
+    grid-column: 3/4;
+    grid-row: 2/3; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid;
+    border-color: white;
+    margin-right: 16px;
+}
+
+.buzo-adidas{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid;
+    border-color: white;
+    margin-right: 16px;
+}
+
+.medias-grid{
+    grid-column: 5/6;
+    grid-row: 2/3; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid;
+    border-color: white;
+}
+
+.imagen-nike{
+    width: 70%;
+}
+
+.imagen-puma{
+    width: 70%;
+}
+
+.imagen-adidas{
+    width: 50%;
+}
+
+.imagen-medias{
+    width: 60%;
+    height: 100%;
+}
+
+button{
+    margin-bottom: 16px !important;
+}
+
+.imagenes{
+    width: 20%;
+}
