@@ -1,3 +1,7 @@
+
+let nombreCliente = prompt("ingrese su nombre: ");
+alert(nombreCliente || "El usuario no ingreso su nombre") 
+
 class Producto {
     constructor(id, nombre, precio) {
         this.id = id;
@@ -39,7 +43,7 @@ const agregarAlCarrito = (id) => {
     const producto = arrayProductos.find(producto => producto.id === id);
     carrito.push(producto);
     localStorage.setItem("arrayProductos", JSON.stringify(producto) )
-    console.log(carrito)
+    carrito= localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : []
 }
 
 const contenedorCarrito = document.getElementById ("contenedorCarrito");
