@@ -1,4 +1,3 @@
-
 let nombreCliente = prompt("ingrese su nombre: ");
 alert(nombreCliente || "El usuario no ingreso su nombre") 
 
@@ -32,6 +31,10 @@ arrayProductos.forEach(producto => {
     contenedorProductos.appendChild(divProducto);
     const boton = document.getElementById(`boton${producto.id}`);
 boton.addEventListener ("click", () => {
+    Toastify({
+        text: "Se agrego al carrito",
+        duration: 3000,
+        }).showToast();
     console.log(producto.id);
     agregarAlCarrito(producto.id);
     })
