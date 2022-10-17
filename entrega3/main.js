@@ -77,6 +77,22 @@ function eliminarCarrito(id) {
     actualizarCarrito();
 }
 
+/*****FETCH*****/
+
+const criptoYa = "https://criptoya.com/api/dolar"
+
+let divDolar = document.getElementById ("divDolar");
+
+fetch(criptoYa)
+    .then(response => response.json())
+    .then (({blue, solidario})=> {
+        divDolar.innerHTML = `
+        <h2>Aceptamos Dolares!</h2>
+        <p>Dolar Blue: ${blue}</p>
+        <p>Dolar Solidario: ${solidario}</p>
+        `
+    })
+    .catch(error => console.log(error));
 
 
 
