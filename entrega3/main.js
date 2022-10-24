@@ -1,6 +1,3 @@
-let nombreCliente = prompt("ingrese su nombre: ");
-alert(nombreCliente || "El usuario no ingreso su nombre") 
-
 class Producto {
     constructor(id, nombre, precio) {
         this.id = id;
